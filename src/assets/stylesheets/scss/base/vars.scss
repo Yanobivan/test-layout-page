@@ -1,0 +1,30 @@
+// Orange
+$orangeStatic: #ff7400;
+$orangeActive: #ff6701;
+
+// White
+$whiteBasic: #ffffffe5;
+$WhiteHover: #ffffff9a;
+
+
+// Mixins
+@mixin OpenSans-bold {
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $whiteBasic;
+}
+
+@mixin OpenSans-regular {
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $whiteBasic;
+}

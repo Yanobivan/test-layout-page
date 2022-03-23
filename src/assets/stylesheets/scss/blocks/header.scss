@@ -1,0 +1,88 @@
+body {
+  background-color: pink;
+}
+.header {
+  width: 1115px;
+  margin: 0 auto;
+  display: flex;
+  width: 1115px;
+  align-items: center;
+  margin-top: 50px;
+}
+.header__logo {
+  margin-right: 268px;
+  height: 67px;
+}
+.navigation {
+  display: flex;
+
+  & li {
+    padding-right: 23px;
+    list-style-type: none;
+
+    & > a {
+      text-decoration: none;
+      @include OpenSans-bold;
+
+      &:active {
+        color: $orangeActive;
+      }
+
+      &:hover:not(:active) {
+        color: $WhiteHover;
+      }
+    }
+  }
+}
+.cart__svg {
+  margin-left: 13px;
+}
+.divider {
+  width: 51px;
+  height: 0px;
+  border-bottom: 1px solid $whiteBasic;
+  transform: rotate(90deg);
+}
+.number__section {
+  display: inline-block;
+  width: 162px;
+  & > p {
+    margin: auto;
+    text-decoration: none;
+    @include OpenSans-regular;
+  }
+  & > a {
+    text-decoration: none;
+    @include OpenSans-bold;
+
+    &:active {
+      color: $orangeActive;
+    }
+
+    &:hover:not(:active) {
+      color: $WhiteHover;
+    }
+  }
+}
+.button {
+  margin-left: auto;
+  width: 157px;
+  height: 47px;
+  background-color: $orangeStatic;
+  border: unset;
+  cursor: pointer;
+
+  & > p {
+    @include OpenSans-bold;
+    text-align: center;
+  }
+
+  &:active {
+    background-color: $orangeActive;
+  }
+}
+.cart__svg {
+  &:active {
+    color: $orangeActive;
+  }
+}

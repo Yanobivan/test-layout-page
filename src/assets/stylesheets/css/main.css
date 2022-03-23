@@ -1,0 +1,119 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
+body {
+  background-color: pink;
+}
+
+.header {
+  width: 1115px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1115px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.header__logo {
+  margin-right: 268px;
+  height: 67px;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.navigation li {
+  padding-right: 23px;
+  list-style-type: none;
+}
+.navigation li > a {
+  text-decoration: none;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffffe5;
+}
+.navigation li > a:active {
+  color: #ff6701;
+}
+.navigation li > a:hover:not(:active) {
+  color: #ffffff9a;
+}
+
+.cart__svg {
+  margin-left: 13px;
+}
+
+.divider {
+  width: 51px;
+  height: 0px;
+  border-bottom: 1px solid #ffffffe5;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.number__section {
+  display: inline-block;
+  width: 162px;
+}
+.number__section > p {
+  margin: auto;
+  text-decoration: none;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffffe5;
+}
+.number__section > a {
+  text-decoration: none;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffffe5;
+}
+.number__section > a:active {
+  color: #ff6701;
+}
+.number__section > a:hover:not(:active) {
+  color: #ffffff9a;
+}
+
+.button {
+  margin-left: auto;
+  width: 157px;
+  height: 47px;
+  background-color: #ff7400;
+  border: unset;
+  cursor: pointer;
+}
+.button > p {
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffffe5;
+  text-align: center;
+}
+.button:active {
+  background-color: #ff6701;
+}
+
+.cart__svg:active {
+  color: #ff6701;
+}
