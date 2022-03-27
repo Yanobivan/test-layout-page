@@ -1,11 +1,25 @@
 // Orange
 $orangeStatic: #ff7400;
 $orangeActive: #ff6701;
+$orangeTittle: #d67e35;
+$orangeGold: #bc9060;
 
 // White
+$whiteStandart: #ffffff;
 $whiteBasic: #ffffffe5;
-$WhiteHover: #ffffff9a;
+$WhiteHover: #ffffffcb;
 
+//Grey
+$greyBasic: #656363;
+
+//Black
+$blackStandart: #000000;
+$blackPrimary: #2c2c2c;
+
+//Yellow
+
+//Shadow
+$shadow1: 10px 10px 40px rgba(0, 0, 0, 0.1);
 
 // Mixins
 @mixin OpenSans-bold {
@@ -27,4 +41,12 @@ $WhiteHover: #ffffff9a;
   letter-spacing: 0em;
   text-align: left;
   color: $whiteBasic;
+}
+
+@mixin Tinos-regular {
+  font-family: Tinos;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 57px;
+  letter-spacing: 0em;
 }
