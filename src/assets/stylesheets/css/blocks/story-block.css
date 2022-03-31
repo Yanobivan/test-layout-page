@@ -1,0 +1,12 @@
+.story-block {
+  margin-top: 150px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.text-number {
+  font-size: 40px;
+  line-height: 54px;
+  text-align: center;
+}

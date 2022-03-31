@@ -1,0 +1,72 @@
+.story-block {
+  @include OpenSans-regular;
+
+  display: flex;
+  padding-top: 100px;
+  color: black;
+}
+
+.story__text {
+  width: 444px;
+  min-height: 422px;
+  text-align: center;
+  h1 {
+    @include Tinos-regular;
+    font-size: 54px;
+    line-height: 62px;
+    span {
+      color: #d67e34;
+    }
+  }
+  p {
+    @include OpenSans-regular;
+    color: #656363;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+  }
+}
+
+.story__images {
+  width: 539px;
+  height: 498px;
+  margin-left: 125px;
+}
+
+.story__number {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  .text-number {
+    @include OpenSans-regular;
+
+    font-size: 40px;
+    line-height: 54px;
+    margin-bottom: unset;
+    color: #bc9060;
+  }
+
+  .text-label {
+    @include OpenSans-regular;
+
+    font-size: 20px;
+    line-height: 27px;
+  }
+}
+
+.image {
+  position: relative;
+  background-color: $whiteStandart;
+  box-shadow: $shadow2;
+}
+.image__cafe {
+  bottom: 62px;
+  width: 249px;
+  height: 300px;
+  left: 40px;
+  z-index: 3;
+}
+.image__cake {
+  width: 255px;
+  height: 429px;
+}

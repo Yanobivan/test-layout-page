@@ -5,3 +5,13 @@
 // blocks
 @import "./blocks/header.scss";
 @import "./blocks/hero-block.scss";
+@import "./blocks/story-block.scss";
+
+body {
+  background-color: $whiteStandart;
+}
+
+.container {
+  max-width: 1130px;
+  margin: 0 auto;
+}
