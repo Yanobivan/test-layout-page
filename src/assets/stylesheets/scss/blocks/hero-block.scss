@@ -3,11 +3,8 @@ body {
 }
 .hero {
   padding-top: 189px;
-  padding-bottom: 100px;
-  background: url("../../images/hero.jpg") no-repeat center / cover;
-  background-color: $blackStandart;
-  width: 1519px;
-  height: 900px;
+  background: url("../../images/hero.jpg") no-repeat top;
+  background-size: 1600px 889px;
   margin: 0 auto;
 }
 
@@ -77,17 +74,22 @@ body {
 
 .intro {
   width: 349px;
-  height: 328px;
+  min-height: 328px;
   background-color: $whiteStandart;
   font-size: 26px;
   line-height: 30px;
   text-align: center;
   box-shadow: $shadow1;
+  margin-bottom: 50px;
 
   &::before {
-    content: url("../../images/svg/mask-group.svg");
-    position: relative;
+    content: "";
     top: 48px;
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: url("../../images/svg/mask-group.svg") no-repeat;
   }
 }
 
@@ -97,13 +99,16 @@ body {
 
   color: $blackPrimary;
 
-  > span {
+  span {
     color: $orangeGold;
   }
 }
 
 .intro-text {
-  margin-top: 0px;
+  @include Tinos-regular;
+  font-size: 26px;
+  line-height: 30px;
   color: $greyBasic;
   padding: 0px 10px;
+  margin-top: unset;
 }

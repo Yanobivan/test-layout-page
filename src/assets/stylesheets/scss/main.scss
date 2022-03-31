@@ -5,3 +5,19 @@
 // blocks
 @import "./blocks/header.scss";
 @import "./blocks/hero-block.scss";
+@import "./blocks/story-block.scss";
+
+body {
+  background-color: $whiteStandart;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.container {
+  max-width: 1130px;
+  margin: 0 auto;
+}
