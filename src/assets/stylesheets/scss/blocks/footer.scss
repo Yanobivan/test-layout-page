@@ -1,0 +1,28 @@
+.footer {
+  background: url("../../images/footer.jpg") no-repeat top;
+  background-size: 1600px 397px;
+  height: 100%;
+  width: 100%;
+}
+.footer__container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 0.8fr 0.25fr;
+  align-items: center;
+}
+
+.footer__label {
+  @include Tinos-regular;
+
+  font-size: 52px;
+  line-height: 60px;
+  color: #d67e34;
+}
+
+.footer__sale {
+  @include OpenSans-bold;
+
+  font-size: 24px;
+  line-height: 33px;
+  color: $whiteStandart;
+}
