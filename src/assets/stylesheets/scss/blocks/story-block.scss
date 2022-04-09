@@ -36,7 +36,7 @@
 
 .story__number {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
 
   .text-number {
     @include OpenSans-regular;
@@ -59,13 +59,19 @@
   position: relative;
   background-color: $whiteStandart;
   box-shadow: $shadow2;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
+
 .image__cafe {
   bottom: 62px;
   width: 249px;
   height: 300px;
   left: 40px;
-  z-index: 3;
+  z-index: 2;
 }
 .image__cake {
   width: 255px;

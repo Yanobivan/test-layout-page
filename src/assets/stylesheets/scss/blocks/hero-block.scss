@@ -68,7 +68,7 @@ body {
 
 .container-intro {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(349px, 1fr));
   margin-top: 124px;
 }
 
@@ -81,6 +81,11 @@ body {
   text-align: center;
   box-shadow: $shadow1;
   margin-bottom: 50px;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 
   &::before {
     content: "";
@@ -95,8 +100,8 @@ body {
 
 .intro-title {
   @include Tinos-regular;
-  margin-bottom: 0px;
 
+  margin-bottom: 0px;
   color: $blackPrimary;
 
   span {

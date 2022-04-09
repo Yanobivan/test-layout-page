@@ -124,10 +124,21 @@
   height: 47px;
   background-color: #ff7400;
   border: unset;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
   cursor: pointer;
 }
 .button:active {
-  background-color: #ff6701;
+  border: 3px dotted red;
+  color: red;
+  background: rgba(0, 0, 0, 0);
+}
+.button:hover:not(:active) {
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+  border: 3px dotted #ff6701;
+  color: #ff6701;
+  background: rgba(0, 0, 0, 0);
 }
 
 body {
@@ -213,8 +224,7 @@ body {
 .container-intro {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(349px, 1fr));
   margin-top: 124px;
 }
 
@@ -228,6 +238,14 @@ body {
   -webkit-box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1);
           box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1);
   margin-bottom: 50px;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.intro:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .intro::before {
   content: "";
@@ -312,8 +330,8 @@ body {
 .story__number {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
 }
 .story__number .text-number {
   font-family: Open Sans;
@@ -339,6 +357,14 @@ body {
   background-color: #ffffff;
   -webkit-box-shadow: 20px 0px 30px 3px #00000080;
           box-shadow: 20px 0px 30px 3px #00000080;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.image:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .image__cafe {
@@ -346,7 +372,7 @@ body {
   width: 249px;
   height: 300px;
   left: 40px;
-  z-index: 3;
+  z-index: 2;
 }
 
 .image__cake {
